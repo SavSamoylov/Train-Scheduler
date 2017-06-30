@@ -22,10 +22,10 @@ $(document).ready(function(){
   var minAway = "";
 
   $("#addTrain").on("click", function(){
-  	trainName = $("#name").val();
-  	trainDestination = $("#destination").val();
-  	firstTrainTime = $("#fTrainTime").val();
-  	trainFreq = $("#frequency").val();
+  	trainName = $("#name").val().trim();
+  	trainDestination = $("#destination").val().trim();
+  	firstTrainTime = $("#fTrainTime").val().trim();
+  	trainFreq = $("#frequency").val().trim();
 
   	 // Code for handling the push
      database.ref().push({
