@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Train Scheduler</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
- <div class="container">
+ <div class="container-fluid">
  	 <div class="jumbotron text-center">
- 		<h1>Anytime is Train Time</h1>
-		<h3>Chee Chee Choo Choo</h3>
- </div>
+ 		<h1>Train Schedule</h1>
+ 	  </div>
 </div>
 <!--  End Jumbotron -->
 <div class="container">
@@ -18,7 +18,7 @@
 
 <!-- Start Table -->          
 
-  <table class="table table-bordered">
+  <table class="table table-hover raisedTable">
   
     <thead>
   
@@ -47,14 +47,14 @@
 	<div class="panel-body">
 		
 			<div class="form-group">
-				<label for="">Train Name</label>
-				<input type="text" class="form-control" id="name" placeholder="Input field">
-				<label for="">Destination</label>
-				<input type="text" class="form-control" id="destination" placeholder="Input field">
-				<label for="">First Train Time (HH:mm - military time)</label>
-				<input type="text" class="form-control" id="fTrainTime" placeholder="Input field">
-				<label for="">Frequency (min)</label>
-				<input type="text" class="form-control" id="frequency" placeholder="Input field">
+				<label for="">Train Name</label></br>
+				<input type="text" class="form-control" id="name" placeholder="Input field"></br>
+				<label for="">Destination</label></br>
+				<input type="text" class="form-control" id="destination" placeholder="Input field"></br>
+				<label for="">First Train Time (HH:mm - military time)</label></br>
+				<input type="text" class="form-control" id="fTrainTime" placeholder="Input field"></br>
+				<label for="">Frequency (min)</label></br>
+				<input type="text" class="form-control" id="frequency" placeholder="Input field"></br>
 			</div>
 			<button type="submit" class="btn btn-primary" id="addTrain">Add</button>
 	
